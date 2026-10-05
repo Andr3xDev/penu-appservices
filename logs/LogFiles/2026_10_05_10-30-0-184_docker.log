@@ -1,0 +1,208 @@
+2026-10-05T09:31:24.5392449Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-10-05T09:31:25.0500573Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-10-05T09:31:25.0503890Z Container start method called.
+2026-10-05T09:31:25.0525825Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.4:13209/appsvc/node:22-lts_20260810.2.tuxprod for app-notas-manual-chavarro-23778., DetailsLevel: INFO
+2026-10-05T09:31:25.0526656Z Establishing network.
+2026-10-05T09:31:25.0527491Z Pulling image: appsvc/node:22-lts_20260810.2.tuxprod.
+2026-10-05T09:31:44.8954402Z Image appsvc/node:22-lts_20260810.2.tuxprod is pulled from registry 10.1.0.4:13209
+2026-10-05T09:31:44.8956042Z Container is starting.
+2026-10-05T09:31:44.8957468Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for app-notas-manual-chavarro-23778., DetailsLevel: INFO
+2026-10-05T09:31:44.8958327Z Establishing user namespace if not established already.
+2026-10-05T09:31:44.8959312Z Establishing network if not established already.
+2026-10-05T09:31:44.8960394Z Mounting volumes.
+2026-10-05T09:31:44.8963693Z Nested mountpoint 
+2026-10-05T09:31:44.9146912Z Nested mountpoint volatile/logs
+2026-10-05T09:31:44.9280270Z Nested mountpoint 
+2026-10-05T09:31:44.9449327Z Nested mountpoint 
+2026-10-05T09:31:44.9484785Z Nested mountpoint 
+2026-10-05T09:31:44.9497140Z Nested mountpoint 
+2026-10-05T09:31:48.0207930Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for app-notas-manual-chavarro-23778. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-10-05T09:31:48.0209136Z Creating container.
+2026-10-05T09:31:48.0210037Z Creating pipes for streaming container io.
+2026-10-05T09:31:48.0210691Z Creating stdout named pipe at /podr/container/pipe/6940e3c1c1fd_app-notas-manual-chavarro-23778/stdout_6b59d16b99244d8ca6fbab510a820f8e.
+2026-10-05T09:31:48.1060245Z Successfully created stdout named pipe at: /podr/container/pipe/6940e3c1c1fd_app-notas-manual-chavarro-23778/stdout_6b59d16b99244d8ca6fbab510a820f8e.
+2026-10-05T09:31:48.1061196Z Opening named pipe /podr/container/pipe/6940e3c1c1fd_app-notas-manual-chavarro-23778/stdout_6b59d16b99244d8ca6fbab510a820f8e for reading in non-blocking mode.
+2026-10-05T09:31:48.1062175Z Successfully opened named pipe: /podr/container/pipe/6940e3c1c1fd_app-notas-manual-chavarro-23778/stdout_6b59d16b99244d8ca6fbab510a820f8e.
+2026-10-05T09:31:48.1063912Z Successfully removed non-blocking flag from /podr/container/pipe/6940e3c1c1fd_app-notas-manual-chavarro-23778/stdout_6b59d16b99244d8ca6fbab510a820f8e.
+2026-10-05T09:31:48.1065394Z Creating stderr named pipe at /podr/container/pipe/6940e3c1c1fd_app-notas-manual-chavarro-23778/stderr_f4953bf09c2c4277ba55c32552c8fd1a.
+2026-10-05T09:31:48.1066621Z Successfully created stderr named pipe at: /podr/container/pipe/6940e3c1c1fd_app-notas-manual-chavarro-23778/stderr_f4953bf09c2c4277ba55c32552c8fd1a.
+2026-10-05T09:31:48.1067248Z Opening named pipe /podr/container/pipe/6940e3c1c1fd_app-notas-manual-chavarro-23778/stderr_f4953bf09c2c4277ba55c32552c8fd1a for reading in non-blocking mode.
+2026-10-05T09:31:48.1068027Z Successfully opened named pipe: /podr/container/pipe/6940e3c1c1fd_app-notas-manual-chavarro-23778/stderr_f4953bf09c2c4277ba55c32552c8fd1a.
+2026-10-05T09:31:48.1070813Z Successfully removed non-blocking flag from /podr/container/pipe/6940e3c1c1fd_app-notas-manual-chavarro-23778/stderr_f4953bf09c2c4277ba55c32552c8fd1a.
+2026-10-05T09:31:48.1073677Z Creating container with image: appsvc/node:22-lts_20260810.2.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/node:22-lts_20260810.2.tuxprod
+2026-10-05T09:31:49.3434214Z Starting container: 6940e3c1c1fd_app-notas-manual-chavarro-23778.
+2026-10-05T09:31:49.3696799Z Starting watchers and probes.
+2026-10-05T09:31:49.3711166Z Starting metrics collection.
+2026-10-05T09:31:49.3751317Z Container is running.
+2026-10-05T09:31:49.3755546Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-notas-manual-chavarro-23778 successfully created and is running., DetailsLevel: INFO
+2026-10-05T09:31:49.4277790Z Container start method finished after 24373 ms.
+2026-10-05T09:31:49.4339281Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-notas-manual-chavarro-23778 successfully created and is running., DetailsLevel: INFO
+2026-10-05T09:31:49.4499511Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-10-05T09:32:22.5765491Z Site startup probe succeeded after 33.1030296 seconds.
+2026-10-05T09:32:22.8702786Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 33.1030296 seconds., DetailsLevel: INFO
+2026-10-05T09:32:23.3467614Z Site is running with deployment version: f371b3c6-e811-4326-9420-17f369a01700
+2026-10-05T09:32:23.3519316Z Site started.
+2026-10-05T09:32:23.3555939Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 10/05/2026 09:32:23 (UTC), DetailsLevel: INFO
+2026-10-05T09:32:23.4473960Z Site is running with patch version NODE-22.23.2
+2026-10-05T09:44:30.6927087Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-10-05T09:44:31.7876022Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-10-05T09:44:31.7876793Z Container start method called.
+2026-10-05T09:44:31.7877246Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.4:13209/appsvc/node:22-lts_20260810.2.tuxprod for app-notas-manual-chavarro-23778., DetailsLevel: INFO
+2026-10-05T09:44:31.7878327Z Establishing network.
+2026-10-05T09:44:31.7879294Z Pulling image: appsvc/node:22-lts_20260810.2.tuxprod.
+2026-10-05T09:44:32.1529424Z Container is starting.
+2026-10-05T09:44:32.1530504Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for app-notas-manual-chavarro-23778., DetailsLevel: INFO
+2026-10-05T09:44:32.1531217Z Establishing user namespace if not established already.
+2026-10-05T09:44:32.1539678Z Establishing network if not established already.
+2026-10-05T09:44:32.1547116Z Mounting volumes.
+2026-10-05T09:44:32.1555920Z Nested mountpoint 
+2026-10-05T09:44:32.1592448Z Nested mountpoint volatile/logs
+2026-10-05T09:44:32.1676359Z Nested mountpoint 
+2026-10-05T09:44:32.1681944Z Nested mountpoint 
+2026-10-05T09:44:32.1687903Z Nested mountpoint 
+2026-10-05T09:44:32.1727766Z Nested mountpoint 
+2026-10-05T09:44:32.3661358Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for app-notas-manual-chavarro-23778. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-10-05T09:44:32.3662112Z Creating container.
+2026-10-05T09:44:32.3663321Z Creating pipes for streaming container io.
+2026-10-05T09:44:32.3663894Z Creating stdout named pipe at /podr/container/pipe/187f3480c86c_app-notas-manual-chavarro-23778/stdout_e2a06878103d4ccea585f56a2e1f7484.
+2026-10-05T09:44:32.3665422Z Successfully created stdout named pipe at: /podr/container/pipe/187f3480c86c_app-notas-manual-chavarro-23778/stdout_e2a06878103d4ccea585f56a2e1f7484.
+2026-10-05T09:44:32.3665987Z Opening named pipe /podr/container/pipe/187f3480c86c_app-notas-manual-chavarro-23778/stdout_e2a06878103d4ccea585f56a2e1f7484 for reading in non-blocking mode.
+2026-10-05T09:44:32.3666615Z Successfully opened named pipe: /podr/container/pipe/187f3480c86c_app-notas-manual-chavarro-23778/stdout_e2a06878103d4ccea585f56a2e1f7484.
+2026-10-05T09:44:32.3667131Z Successfully removed non-blocking flag from /podr/container/pipe/187f3480c86c_app-notas-manual-chavarro-23778/stdout_e2a06878103d4ccea585f56a2e1f7484.
+2026-10-05T09:44:32.3692163Z Creating stderr named pipe at /podr/container/pipe/187f3480c86c_app-notas-manual-chavarro-23778/stderr_800492bdc0c84b929554188768e87627.
+2026-10-05T09:44:32.3695875Z Successfully created stderr named pipe at: /podr/container/pipe/187f3480c86c_app-notas-manual-chavarro-23778/stderr_800492bdc0c84b929554188768e87627.
+2026-10-05T09:44:32.3697296Z Opening named pipe /podr/container/pipe/187f3480c86c_app-notas-manual-chavarro-23778/stderr_800492bdc0c84b929554188768e87627 for reading in non-blocking mode.
+2026-10-05T09:44:32.3699451Z Successfully opened named pipe: /podr/container/pipe/187f3480c86c_app-notas-manual-chavarro-23778/stderr_800492bdc0c84b929554188768e87627.
+2026-10-05T09:44:32.3700234Z Successfully removed non-blocking flag from /podr/container/pipe/187f3480c86c_app-notas-manual-chavarro-23778/stderr_800492bdc0c84b929554188768e87627.
+2026-10-05T09:44:32.3701513Z Creating container with image: appsvc/node:22-lts_20260810.2.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/node:22-lts_20260810.2.tuxprod
+2026-10-05T09:44:32.8719076Z Starting container: 187f3480c86c_app-notas-manual-chavarro-23778.
+2026-10-05T09:44:32.9168679Z Starting watchers and probes.
+2026-10-05T09:44:32.9181367Z Starting metrics collection.
+2026-10-05T09:44:32.9215073Z Container is running.
+2026-10-05T09:44:32.9216090Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-notas-manual-chavarro-23778 successfully created and is running., DetailsLevel: INFO
+2026-10-05T09:44:32.9605636Z Container start method finished after 1172 ms.
+2026-10-05T09:44:32.9607278Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-notas-manual-chavarro-23778 successfully created and is running., DetailsLevel: INFO
+2026-10-05T09:44:32.9607667Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-10-05T09:44:34.2035331Z Site startup probe failed after 1.2415787 seconds.
+2026-10-05T09:44:34.3325413Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:44:34, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: ERR
+2026-10-05T09:44:34.3381894Z Failed to start site. Revert by stopping site.
+2026-10-05T09:44:34.3464846Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:44:34, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: ERR
+2026-10-05T09:44:34.3564897Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:44:34, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: ERR
+2026-10-05T09:44:34.3566779Z Container is terminating. Grace period: 5 seconds.
+2026-10-05T09:44:34.3684206Z Stop and delete container. Retry count = 0
+2026-10-05T09:44:34.3692956Z Stopping container: 187f3480c86c_app-notas-manual-chavarro-23778.
+2026-10-05T09:44:39.4175741Z Deleting container: 187f3480c86c_app-notas-manual-chavarro-23778. Retry count = 0
+2026-10-05T09:44:39.5601559Z Container spec TerminationMessagePolicy  path 
+2026-10-05T09:44:39.5603214Z Container is terminated. Total time elapsed: 5203 ms.
+2026-10-05T09:44:39.5604066Z Site container: app-notas-manual-chavarro-23778 terminated during site startup.
+2026-10-05T09:44:39.5617654Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:44:34, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Site container: app-notas-manual-chavarro-23778 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-10-05T09:44:39.5645351Z Site: app-notas-manual-chavarro-23778 stopped.
+2026-10-05T09:44:59.9854956Z State: Stopping, Action: StoppingSite, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 10/05/2026 09:32:23 (UTC), DetailsLevel: INFO
+2026-10-05T09:44:59.9857562Z State: Stopping, Action: StoppingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 10/05/2026 09:32:23 (UTC), DetailsLevel: INFO
+2026-10-05T09:44:59.9858331Z Container is terminating. Grace period: 5 seconds.
+2026-10-05T09:44:59.9887878Z Stop and delete container. Retry count = 0
+2026-10-05T09:44:59.9888553Z Stopping container: 6940e3c1c1fd_app-notas-manual-chavarro-23778.
+2026-10-05T09:45:05.0135522Z Deleting container: 6940e3c1c1fd_app-notas-manual-chavarro-23778. Retry count = 0
+2026-10-05T09:45:05.2674946Z Container spec TerminationMessagePolicy  path 
+2026-10-05T09:45:05.2676038Z Container is terminated. Total time elapsed: 5281 ms.
+2026-10-05T09:45:05.2678553Z Site: app-notas-manual-chavarro-23778 stopped.
+2026-10-05T09:45:43.3244540Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:44:34, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Site stopped at 10/05/2026 09:44:39 (UTC), DetailsLevel: ERR
+2026-10-05T09:45:43.7374109Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:44:34, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Site stopped at 10/05/2026 09:44:39 (UTC), DetailsLevel: ERR
+2026-10-05T09:45:43.7375054Z Container start method called.
+2026-10-05T09:45:43.7375703Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:44:34, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/appsvc/node:22-lts_20260810.2.tuxprod for app-notas-manual-chavarro-23778., DetailsLevel: INFO
+2026-10-05T09:45:43.7376633Z Establishing network.
+2026-10-05T09:45:43.7377437Z Pulling image: appsvc/node:22-lts_20260810.2.tuxprod.
+2026-10-05T09:45:43.9372837Z Image appsvc/node:22-lts_20260810.2.tuxprod is pulled from registry 10.1.0.6:13209
+2026-10-05T09:45:43.9373572Z Container is starting.
+2026-10-05T09:45:43.9374524Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:44:34, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Mounting volumes for app-notas-manual-chavarro-23778., DetailsLevel: INFO
+2026-10-05T09:45:43.9375600Z Establishing user namespace if not established already.
+2026-10-05T09:45:43.9376497Z Establishing network if not established already.
+2026-10-05T09:45:43.9377612Z Mounting volumes.
+2026-10-05T09:45:43.9379203Z Nested mountpoint 
+2026-10-05T09:45:43.9385657Z Nested mountpoint volatile/logs
+2026-10-05T09:45:43.9421025Z Nested mountpoint 
+2026-10-05T09:45:43.9427098Z Nested mountpoint 
+2026-10-05T09:45:43.9497754Z Nested mountpoint 
+2026-10-05T09:45:43.9554313Z Nested mountpoint 
+2026-10-05T09:45:44.1065581Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:44:34, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for app-notas-manual-chavarro-23778. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-10-05T09:45:44.1066343Z Creating container.
+2026-10-05T09:45:44.1066993Z Creating pipes for streaming container io.
+2026-10-05T09:45:44.1067665Z Creating stdout named pipe at /podr/container/pipe/52ba633138b9_app-notas-manual-chavarro-23778/stdout_b785778a0ee641318b441b7af4dd39ce.
+2026-10-05T09:45:44.1069120Z Successfully created stdout named pipe at: /podr/container/pipe/52ba633138b9_app-notas-manual-chavarro-23778/stdout_b785778a0ee641318b441b7af4dd39ce.
+2026-10-05T09:45:44.1069595Z Opening named pipe /podr/container/pipe/52ba633138b9_app-notas-manual-chavarro-23778/stdout_b785778a0ee641318b441b7af4dd39ce for reading in non-blocking mode.
+2026-10-05T09:45:44.1071729Z Successfully opened named pipe: /podr/container/pipe/52ba633138b9_app-notas-manual-chavarro-23778/stdout_b785778a0ee641318b441b7af4dd39ce.
+2026-10-05T09:45:44.1072417Z Successfully removed non-blocking flag from /podr/container/pipe/52ba633138b9_app-notas-manual-chavarro-23778/stdout_b785778a0ee641318b441b7af4dd39ce.
+2026-10-05T09:45:44.1115630Z Creating stderr named pipe at /podr/container/pipe/52ba633138b9_app-notas-manual-chavarro-23778/stderr_a383aad76c5d4c8db36af2b527b58cd7.
+2026-10-05T09:45:44.1117208Z Successfully created stderr named pipe at: /podr/container/pipe/52ba633138b9_app-notas-manual-chavarro-23778/stderr_a383aad76c5d4c8db36af2b527b58cd7.
+2026-10-05T09:45:44.1117864Z Opening named pipe /podr/container/pipe/52ba633138b9_app-notas-manual-chavarro-23778/stderr_a383aad76c5d4c8db36af2b527b58cd7 for reading in non-blocking mode.
+2026-10-05T09:45:44.1118796Z Successfully opened named pipe: /podr/container/pipe/52ba633138b9_app-notas-manual-chavarro-23778/stderr_a383aad76c5d4c8db36af2b527b58cd7.
+2026-10-05T09:45:44.1119374Z Successfully removed non-blocking flag from /podr/container/pipe/52ba633138b9_app-notas-manual-chavarro-23778/stderr_a383aad76c5d4c8db36af2b527b58cd7.
+2026-10-05T09:45:44.1121901Z Creating container with image: appsvc/node:22-lts_20260810.2.tuxprod from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/appsvc/node:22-lts_20260810.2.tuxprod
+2026-10-05T09:45:44.4107198Z Starting container: 52ba633138b9_app-notas-manual-chavarro-23778.
+2026-10-05T09:45:44.4481753Z Starting watchers and probes.
+2026-10-05T09:45:44.4483999Z Starting metrics collection.
+2026-10-05T09:45:44.4485266Z Container is running.
+2026-10-05T09:45:44.4486152Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:44:34, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Container app-notas-manual-chavarro-23778 successfully created and is running., DetailsLevel: INFO
+2026-10-05T09:45:44.4941207Z Container start method finished after 756 ms.
+2026-10-05T09:45:44.4944668Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:44:34, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Container app-notas-manual-chavarro-23778 successfully created and is running., DetailsLevel: INFO
+2026-10-05T09:45:44.4944982Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:44:34, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-10-05T09:45:50.2619342Z Container has finished running with exit code: 1.
+2026-10-05T09:45:50.2621011Z Container is terminating. Grace period: 5 seconds.
+2026-10-05T09:45:50.2624395Z Stop and delete container. Retry count = 0
+2026-10-05T09:45:50.2625153Z Stopping container: 52ba633138b9_app-notas-manual-chavarro-23778.
+2026-10-05T09:45:50.2775708Z Deleting container: 52ba633138b9_app-notas-manual-chavarro-23778. Retry count = 0
+2026-10-05T09:45:50.6242109Z Container spec TerminationMessagePolicy  path 
+2026-10-05T09:45:50.6243357Z Container is terminated. Total time elapsed: 362 ms.
+2026-10-05T09:45:50.6244018Z Site container: app-notas-manual-chavarro-23778 terminated during site startup.
+2026-10-05T09:45:50.6244779Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:44:34, LastErrorDetails: The container did not complete startup successfully. Please inspect your container logs for more details., Details: Site container: app-notas-manual-chavarro-23778 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-10-05T09:45:50.6268799Z Site startup probe failed after 6.1320525 seconds.
+2026-10-05T09:45:50.6784819Z State: Stopping, Action: CancellingStartup, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:45:50, LastErrorDetails: Container exited with exit code 1 during startup after 6.2s. Please inspect your container logs for more details., Details: Site container: app-notas-manual-chavarro-23778 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-10-05T09:45:50.6795357Z Failed to start site. Revert by stopping site.
+2026-10-05T09:45:50.6796145Z State: Stopping, Action: StoppingSite, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:45:50, LastErrorDetails: Container exited with exit code 1 during startup after 6.2s. Please inspect your container logs for more details., Details: Site container: app-notas-manual-chavarro-23778 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-10-05T09:45:50.6797633Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:45:50, LastErrorDetails: Container exited with exit code 1 during startup after 6.2s. Please inspect your container logs for more details., Details: Site container: app-notas-manual-chavarro-23778 terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-10-05T09:45:50.6797786Z Site: app-notas-manual-chavarro-23778 stopped.
+2026-10-05T09:47:11.1908996Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:45:50, LastErrorDetails: Container exited with exit code 1 during startup after 6.2s. Please inspect your container logs for more details., Details: Site stopped at 10/05/2026 09:45:50 (UTC), DetailsLevel: ERR
+2026-10-05T09:47:13.9369784Z State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:45:50, LastErrorDetails: Container exited with exit code 1 during startup after 6.2s. Please inspect your container logs for more details., Details: Site stopped at 10/05/2026 09:45:50 (UTC), DetailsLevel: ERR
+2026-10-05T09:47:13.9370728Z Container start method called.
+2026-10-05T09:47:13.9371264Z State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:45:50, LastErrorDetails: Container exited with exit code 1 during startup after 6.2s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/appsvc/node:22-lts_20260810.2.tuxprod for app-notas-manual-chavarro-23778., DetailsLevel: INFO
+2026-10-05T09:47:13.9371874Z Establishing network.
+2026-10-05T09:47:13.9372697Z Pulling image: appsvc/node:22-lts_20260810.2.tuxprod.
+2026-10-05T09:47:15.1370840Z Container is starting.
+2026-10-05T09:47:15.1372343Z State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:45:50, LastErrorDetails: Container exited with exit code 1 during startup after 6.2s. Please inspect your container logs for more details., Details: Mounting volumes for app-notas-manual-chavarro-23778., DetailsLevel: INFO
+2026-10-05T09:47:15.1432046Z Establishing user namespace if not established already.
+2026-10-05T09:47:15.1433813Z Establishing network if not established already.
+2026-10-05T09:47:15.1434888Z Mounting volumes.
+2026-10-05T09:47:15.1436362Z Nested mountpoint 
+2026-10-05T09:47:15.1762592Z Nested mountpoint volatile/logs
+2026-10-05T09:47:15.2288529Z Nested mountpoint 
+2026-10-05T09:47:15.2369060Z Nested mountpoint 
+2026-10-05T09:47:15.2558749Z Nested mountpoint 
+2026-10-05T09:47:15.2637723Z Nested mountpoint 
+2026-10-05T09:47:16.4946531Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:45:50, LastErrorDetails: Container exited with exit code 1 during startup after 6.2s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for app-notas-manual-chavarro-23778. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-10-05T09:47:16.4947346Z Creating container.
+2026-10-05T09:47:16.5035575Z Creating pipes for streaming container io.
+2026-10-05T09:47:16.5036725Z Creating stdout named pipe at /podr/container/pipe/dcbf2fcc38f0_app-notas-manual-chavarro-23778/stdout_44c680bcff2c4078b32a772da8869c82.
+2026-10-05T09:47:16.5084483Z Successfully created stdout named pipe at: /podr/container/pipe/dcbf2fcc38f0_app-notas-manual-chavarro-23778/stdout_44c680bcff2c4078b32a772da8869c82.
+2026-10-05T09:47:16.5085359Z Opening named pipe /podr/container/pipe/dcbf2fcc38f0_app-notas-manual-chavarro-23778/stdout_44c680bcff2c4078b32a772da8869c82 for reading in non-blocking mode.
+2026-10-05T09:47:16.5086359Z Successfully opened named pipe: /podr/container/pipe/dcbf2fcc38f0_app-notas-manual-chavarro-23778/stdout_44c680bcff2c4078b32a772da8869c82.
+2026-10-05T09:47:16.5087060Z Successfully removed non-blocking flag from /podr/container/pipe/dcbf2fcc38f0_app-notas-manual-chavarro-23778/stdout_44c680bcff2c4078b32a772da8869c82.
+2026-10-05T09:47:16.5091247Z Creating stderr named pipe at /podr/container/pipe/dcbf2fcc38f0_app-notas-manual-chavarro-23778/stderr_c3ee1c80e2c6410183d8af90a808e2a1.
+2026-10-05T09:47:16.5092467Z Successfully created stderr named pipe at: /podr/container/pipe/dcbf2fcc38f0_app-notas-manual-chavarro-23778/stderr_c3ee1c80e2c6410183d8af90a808e2a1.
+2026-10-05T09:47:16.5093261Z Opening named pipe /podr/container/pipe/dcbf2fcc38f0_app-notas-manual-chavarro-23778/stderr_c3ee1c80e2c6410183d8af90a808e2a1 for reading in non-blocking mode.
+2026-10-05T09:47:16.5094085Z Successfully opened named pipe: /podr/container/pipe/dcbf2fcc38f0_app-notas-manual-chavarro-23778/stderr_c3ee1c80e2c6410183d8af90a808e2a1.
+2026-10-05T09:47:16.5094611Z Successfully removed non-blocking flag from /podr/container/pipe/dcbf2fcc38f0_app-notas-manual-chavarro-23778/stderr_c3ee1c80e2c6410183d8af90a808e2a1.
+2026-10-05T09:47:16.5095748Z Creating container with image: appsvc/node:22-lts_20260810.2.tuxprod from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/appsvc/node:22-lts_20260810.2.tuxprod
+2026-10-05T09:47:18.0714727Z Starting container: dcbf2fcc38f0_app-notas-manual-chavarro-23778.
+2026-10-05T09:47:18.1892229Z Starting watchers and probes.
+2026-10-05T09:47:18.1895378Z Starting metrics collection.
+2026-10-05T09:47:18.1901102Z Container is running.
+2026-10-05T09:47:18.1930113Z State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:45:50, LastErrorDetails: Container exited with exit code 1 during startup after 6.2s. Please inspect your container logs for more details., Details: Container app-notas-manual-chavarro-23778 successfully created and is running., DetailsLevel: INFO
+2026-10-05T09:47:18.3314323Z Container start method finished after 4394 ms.
+2026-10-05T09:47:18.3315676Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:45:50, LastErrorDetails: Container exited with exit code 1 during startup after 6.2s. Please inspect your container logs for more details., Details: Container app-notas-manual-chavarro-23778 successfully created and is running., DetailsLevel: INFO
+2026-10-05T09:47:18.3315931Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:45:50, LastErrorDetails: Container exited with exit code 1 during startup after 6.2s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-10-05T09:47:30.3965944Z Site startup probe succeeded after 12.0387907 seconds.
+2026-10-05T09:47:30.4614603Z State: Starting, Action: WarmUpProbeSucceeded, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:45:50, LastErrorDetails: Container exited with exit code 1 during startup after 6.2s. Please inspect your container logs for more details., Details: Site startup probe succeeded after 12.0387907 seconds., DetailsLevel: INFO
+2026-10-05T09:47:30.6412295Z Site is running with deployment version: f371b3c6-e811-4326-9420-17f369a01700
+2026-10-05T09:47:30.6414326Z Site started.
+2026-10-05T09:47:30.6415075Z State: Started, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:45:50, LastErrorDetails: Container exited with exit code 1 during startup after 6.2s. Please inspect your container logs for more details., Details: Site started at 10/05/2026 09:47:30 (UTC), DetailsLevel: INFO
+2026-10-05T09:47:30.6437817Z Site is running with patch version NODE-22.23.2

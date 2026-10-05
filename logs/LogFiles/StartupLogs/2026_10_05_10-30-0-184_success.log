@@ -1,0 +1,223 @@
+========== New Cold Start Attempt (2026-10-05T09:31:24.5392449+00:00) ==========
+2026-10-05T09:31:24.5392449+00:00 ContainerStatus: State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-10-05T09:31:25.0500573+00:00 ContainerStatus: State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-10-05T09:31:25.0503890+00:00 ContainerStatus: Container start method called.
+2026-10-05T09:31:25.0525825+00:00 ContainerStatus: State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.4:13209/appsvc/node:22-lts_20260810.2.tuxprod for app-notas-manual-chavarro-23778., DetailsLevel: INFO
+2026-10-05T09:31:25.0526656+00:00 ContainerStatus: Establishing network.
+2026-10-05T09:31:25.0527491+00:00 ContainerStatus: Pulling image: appsvc/node:22-lts_20260810.2.tuxprod.
+2026-10-05T09:31:44.8954402+00:00 ContainerStatus: Image appsvc/node:22-lts_20260810.2.tuxprod is pulled from registry 10.1.0.4:13209
+2026-10-05T09:31:44.8956042+00:00 ContainerStatus: Container is starting.
+2026-10-05T09:31:44.8957468+00:00 ContainerStatus: State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for app-notas-manual-chavarro-23778., DetailsLevel: INFO
+2026-10-05T09:31:44.8958327+00:00 ContainerStatus: Establishing user namespace if not established already.
+2026-10-05T09:31:44.8959312+00:00 ContainerStatus: Establishing network if not established already.
+2026-10-05T09:31:44.8960394+00:00 ContainerStatus: Mounting volumes.
+2026-10-05T09:31:44.8963693+00:00 ContainerStatus: Nested mountpoint 
+2026-10-05T09:31:44.9146912+00:00 ContainerStatus: Nested mountpoint volatile/logs
+2026-10-05T09:31:44.9280270+00:00 ContainerStatus: Nested mountpoint 
+2026-10-05T09:31:44.9449327+00:00 ContainerStatus: Nested mountpoint 
+2026-10-05T09:31:44.9484785+00:00 ContainerStatus: Nested mountpoint 
+2026-10-05T09:31:44.9497140+00:00 ContainerStatus: Nested mountpoint 
+2026-10-05T09:31:48.0207930+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for app-notas-manual-chavarro-23778. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-10-05T09:31:48.0209136+00:00 ContainerStatus: Creating container.
+2026-10-05T09:31:48.0210037+00:00 ContainerStatus: Creating pipes for streaming container io.
+2026-10-05T09:31:48.0210691+00:00 ContainerStatus: Creating stdout named pipe at /podr/container/pipe/6940e3c1c1fd_app-notas-manual-chavarro-23778/stdout_6b59d16b99244d8ca6fbab510a820f8e.
+2026-10-05T09:31:48.1060245+00:00 ContainerStatus: Successfully created stdout named pipe at: /podr/container/pipe/6940e3c1c1fd_app-notas-manual-chavarro-23778/stdout_6b59d16b99244d8ca6fbab510a820f8e.
+2026-10-05T09:31:48.1061196+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/6940e3c1c1fd_app-notas-manual-chavarro-23778/stdout_6b59d16b99244d8ca6fbab510a820f8e for reading in non-blocking mode.
+2026-10-05T09:31:48.1062175+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/6940e3c1c1fd_app-notas-manual-chavarro-23778/stdout_6b59d16b99244d8ca6fbab510a820f8e.
+2026-10-05T09:31:48.1063912+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/6940e3c1c1fd_app-notas-manual-chavarro-23778/stdout_6b59d16b99244d8ca6fbab510a820f8e.
+2026-10-05T09:31:48.1065394+00:00 ContainerStatus: Creating stderr named pipe at /podr/container/pipe/6940e3c1c1fd_app-notas-manual-chavarro-23778/stderr_f4953bf09c2c4277ba55c32552c8fd1a.
+2026-10-05T09:31:48.1066621+00:00 ContainerStatus: Successfully created stderr named pipe at: /podr/container/pipe/6940e3c1c1fd_app-notas-manual-chavarro-23778/stderr_f4953bf09c2c4277ba55c32552c8fd1a.
+2026-10-05T09:31:48.1067248+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/6940e3c1c1fd_app-notas-manual-chavarro-23778/stderr_f4953bf09c2c4277ba55c32552c8fd1a for reading in non-blocking mode.
+2026-10-05T09:31:48.1068027+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/6940e3c1c1fd_app-notas-manual-chavarro-23778/stderr_f4953bf09c2c4277ba55c32552c8fd1a.
+2026-10-05T09:31:48.1070813+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/6940e3c1c1fd_app-notas-manual-chavarro-23778/stderr_f4953bf09c2c4277ba55c32552c8fd1a.
+2026-10-05T09:31:48.1073677+00:00 ContainerStatus: Creating container with image: appsvc/node:22-lts_20260810.2.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/node:22-lts_20260810.2.tuxprod
+2026-10-05T09:31:49.3434214+00:00 ContainerStatus: Starting container: 6940e3c1c1fd_app-notas-manual-chavarro-23778.
+2026-10-05T09:31:49.3696799+00:00 ContainerStatus: Starting watchers and probes.
+2026-10-05T09:31:49.3711166+00:00 ContainerStatus: Starting metrics collection.
+2026-10-05T09:31:49.3751317+00:00 ContainerStatus: Container is running.
+2026-10-05T09:31:49.3755546+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-notas-manual-chavarro-23778 successfully created and is running., DetailsLevel: INFO
+2026-10-05T09:31:49.4277790+00:00 ContainerStatus: Container start method finished after 24373 ms.
+2026-10-05T09:31:49.4339281+00:00 ContainerStatus: State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-notas-manual-chavarro-23778 successfully created and is running., DetailsLevel: INFO
+2026-10-05T09:31:49.4499511+00:00 ContainerStatus: State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-10-05T09:31:51.5803432+00:00 ContainerStream:    _____                               
+2026-10-05T09:31:51.5816661+00:00 ContainerStream:   /  _  \ __________ _________   ____  
+2026-10-05T09:31:51.5816744+00:00 ContainerStream:  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-10-05T09:31:51.5816782+00:00 ContainerStream: /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-10-05T09:31:51.5816817+00:00 ContainerStream: \____|__  /_____ \____/ |__|    \___  >
+2026-10-05T09:31:51.5816850+00:00 ContainerStream:         \/      \/                  \/ 
+2026-10-05T09:31:51.5816907+00:00 ContainerStream: A P P   S E R V I C E   O N   L I N U X
+2026-10-05T09:31:51.5816959+00:00 ContainerStream: 
+2026-10-05T09:31:51.5816999+00:00 ContainerStream: Documentation    : http://aka.ms/webapp-linux
+2026-10-05T09:31:51.5817034+00:00 ContainerStream: NodeJS quickstart: https://aka.ms/node-qs
+2026-10-05T09:31:51.5817075+00:00 ContainerStream: NodeJS Version   : v22.23.2
+2026-10-05T09:31:51.5817290+00:00 ContainerStream: Instance Name    : 10-30-0-184
+2026-10-05T09:31:51.5817360+00:00 ContainerStream: Instance Id      : 06af00b7405ce01e92112d9236f57c70d8ff738bceef74cd316ed243ba044a77
+2026-10-05T09:31:51.5817395+00:00 ContainerStream: 
+2026-10-05T09:31:51.5817480+00:00 ContainerStream: Note: Any data outside '/home' is not persisted
+2026-10-05T09:31:57.1992918+00:00 ContainerStream: Starting OpenBSD Secure Shell server: sshd.
+2026-10-05T09:31:57.2177993+00:00 ContainerStream: WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-10-05T09:31:57.2381688+00:00 ContainerStream: Updating certificates in /etc/ssl/certs...
+2026-10-05T09:32:10.2203008+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in SSLcom-TLS-Root-2022-ECC.pem
+2026-10-05T09:32:10.2636431+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in SSLcom-TLS-Root-2022-RSA.pem
+2026-10-05T09:32:11.9073377+00:00 ContainerStream: rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-10-05T09:32:12.2764282+00:00 ContainerStream: 4 added, 0 removed; done.
+2026-10-05T09:32:12.2765156+00:00 ContainerStream: Running hooks in /etc/ca-certificates/update.d...
+2026-10-05T09:32:12.2777591+00:00 ContainerStream: done.
+2026-10-05T09:32:12.3726113+00:00 ContainerStream: CA certificates copied and updated successfully.
+2026-10-05T09:32:13.8112201+00:00 ContainerStream: Starting periodic command scheduler: cron.
+2026-10-05T09:32:15.1607907+00:00 ContainerStream: Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-10-05T09:32:15.2120309+00:00 ContainerStream: Could not find operation ID in manifest. Generating an operation id...
+2026-10-05T09:32:15.2882521+00:00 ContainerStream: Build Operation ID: e4ed5de2-67b6-464e-bd6b-ee010819fe93
+2026-10-05T09:32:16.8885948+00:00 ContainerStream: Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2026-10-05T09:32:16.9910035+00:00 ContainerStream: Writing output script to '/opt/startup/startup.sh'
+2026-10-05T09:32:17.0957763+00:00 ContainerStream: Running #!/bin/sh
+2026-10-05T09:32:17.0958813+00:00 ContainerStream: 
+2026-10-05T09:32:17.0958908+00:00 ContainerStream: # Enter the source directory to make sure the script runs where the user expects
+2026-10-05T09:32:17.0958960+00:00 ContainerStream: cd "/home/site/wwwroot"
+2026-10-05T09:32:17.0959005+00:00 ContainerStream: 
+2026-10-05T09:32:17.0959038+00:00 ContainerStream: export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2026-10-05T09:32:17.0959073+00:00 ContainerStream: if [ -z "$PORT" ]; then
+2026-10-05T09:32:17.0959106+00:00 ContainerStream: 		export PORT=8080
+2026-10-05T09:32:17.0959139+00:00 ContainerStream: fi
+2026-10-05T09:32:17.0959220+00:00 ContainerStream: 
+2026-10-05T09:32:17.0959255+00:00 ContainerStream: echo Found tar.zst based node_modules.
+2026-10-05T09:32:17.0959287+00:00 ContainerStream: extractionCommand="tar -I zstd -xf node_modules.tar.zst -C /node_modules"
+2026-10-05T09:32:17.0959323+00:00 ContainerStream: echo "Removing existing modules directory from root..."
+2026-10-05T09:32:17.0959358+00:00 ContainerStream: rm -fr /node_modules
+2026-10-05T09:32:17.0959571+00:00 ContainerStream: mkdir -p /node_modules
+2026-10-05T09:32:17.0959609+00:00 ContainerStream: echo Extracting modules...
+2026-10-05T09:32:17.0959660+00:00 ContainerStream: $extractionCommand
+2026-10-05T09:32:17.0959747+00:00 ContainerStream: export NODE_PATH="/node_modules":$NODE_PATH
+2026-10-05T09:32:17.0959784+00:00 ContainerStream: export PATH=/node_modules/.bin:$PATH
+2026-10-05T09:32:17.0959818+00:00 ContainerStream: if [ -d node_modules ]; then
+2026-10-05T09:32:17.0959849+00:00 ContainerStream:     mv -f node_modules _del_node_modules || true
+2026-10-05T09:32:17.0959881+00:00 ContainerStream: fi
+2026-10-05T09:32:17.0959910+00:00 ContainerStream: 
+2026-10-05T09:32:17.0959947+00:00 ContainerStream: if [ -d /node_modules ]; then
+2026-10-05T09:32:17.0959999+00:00 ContainerStream:     ln -sfn /node_modules ./node_modules 
+2026-10-05T09:32:17.0960033+00:00 ContainerStream: fi
+2026-10-05T09:32:17.0960061+00:00 ContainerStream: 
+2026-10-05T09:32:17.0960090+00:00 ContainerStream: echo "Done."
+2026-10-05T09:32:17.1279801+00:00 ContainerStream: PATH="$PATH:/home/site/wwwroot" node src/server.js
+2026-10-05T09:32:17.1771093+00:00 ContainerStream: Found tar.zst based node_modules.
+2026-10-05T09:32:17.1777655+00:00 ContainerStream: Removing existing modules directory from root...
+2026-10-05T09:32:17.2759148+00:00 ContainerStream: Extracting modules...
+2026-10-05T09:32:20.5288279+00:00 ContainerStream: Done.
+2026-10-05T09:32:22.3281886+00:00 ContainerStream: Portal de notas escuchando en el puerto 8080
+2026-10-05T09:32:22.5765491+00:00 ContainerStatus: Site startup probe succeeded after 33.1030296 seconds.
+2026-10-05T09:32:22.8702786+00:00 ContainerStatus: State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 33.1030296 seconds., DetailsLevel: INFO
+2026-10-05T09:32:23.3467614+00:00 ContainerStatus: Site is running with deployment version: f371b3c6-e811-4326-9420-17f369a01700
+2026-10-05T09:32:23.3519316+00:00 ContainerStatus: Site started.
+2026-10-05T09:32:23.3555939+00:00 ContainerStatus: State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 10/05/2026 09:32:23 (UTC), DetailsLevel: INFO
+2026-10-05T09:32:23.4473960+00:00 ContainerStatus: Site is running with patch version NODE-22.23.2
+========== New Cold Start Attempt (2026-10-05T09:47:11.1908996+00:00) ==========
+2026-10-05T09:47:11.1908996+00:00 ContainerStatus: State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:45:50, LastErrorDetails: Container exited with exit code 1 during startup after 6.2s. Please inspect your container logs for more details., Details: Site stopped at 10/05/2026 09:45:50 (UTC), DetailsLevel: ERR
+2026-10-05T09:47:13.9369784+00:00 ContainerStatus: State: Starting, Action: StartingSiteContainers, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:45:50, LastErrorDetails: Container exited with exit code 1 during startup after 6.2s. Please inspect your container logs for more details., Details: Site stopped at 10/05/2026 09:45:50 (UTC), DetailsLevel: ERR
+2026-10-05T09:47:13.9370728+00:00 ContainerStatus: Container start method called.
+2026-10-05T09:47:13.9371264+00:00 ContainerStatus: State: Starting, Action: PullingImage, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:45:50, LastErrorDetails: Container exited with exit code 1 during startup after 6.2s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.6:13209/appsvc/node:22-lts_20260810.2.tuxprod for app-notas-manual-chavarro-23778., DetailsLevel: INFO
+2026-10-05T09:47:13.9371874+00:00 ContainerStatus: Establishing network.
+2026-10-05T09:47:13.9372697+00:00 ContainerStatus: Pulling image: appsvc/node:22-lts_20260810.2.tuxprod.
+2026-10-05T09:47:15.1370840+00:00 ContainerStatus: Container is starting.
+2026-10-05T09:47:15.1372343+00:00 ContainerStatus: State: Starting, Action: MountingVolumes, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:45:50, LastErrorDetails: Container exited with exit code 1 during startup after 6.2s. Please inspect your container logs for more details., Details: Mounting volumes for app-notas-manual-chavarro-23778., DetailsLevel: INFO
+2026-10-05T09:47:15.1432046+00:00 ContainerStatus: Establishing user namespace if not established already.
+2026-10-05T09:47:15.1433813+00:00 ContainerStatus: Establishing network if not established already.
+2026-10-05T09:47:15.1434888+00:00 ContainerStatus: Mounting volumes.
+2026-10-05T09:47:15.1436362+00:00 ContainerStatus: Nested mountpoint 
+2026-10-05T09:47:15.1762592+00:00 ContainerStatus: Nested mountpoint volatile/logs
+2026-10-05T09:47:15.2288529+00:00 ContainerStatus: Nested mountpoint 
+2026-10-05T09:47:15.2369060+00:00 ContainerStatus: Nested mountpoint 
+2026-10-05T09:47:15.2558749+00:00 ContainerStatus: Nested mountpoint 
+2026-10-05T09:47:15.2637723+00:00 ContainerStatus: Nested mountpoint 
+2026-10-05T09:47:16.4946531+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:45:50, LastErrorDetails: Container exited with exit code 1 during startup after 6.2s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for app-notas-manual-chavarro-23778. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-10-05T09:47:16.4947346+00:00 ContainerStatus: Creating container.
+2026-10-05T09:47:16.5035575+00:00 ContainerStatus: Creating pipes for streaming container io.
+2026-10-05T09:47:16.5036725+00:00 ContainerStatus: Creating stdout named pipe at /podr/container/pipe/dcbf2fcc38f0_app-notas-manual-chavarro-23778/stdout_44c680bcff2c4078b32a772da8869c82.
+2026-10-05T09:47:16.5084483+00:00 ContainerStatus: Successfully created stdout named pipe at: /podr/container/pipe/dcbf2fcc38f0_app-notas-manual-chavarro-23778/stdout_44c680bcff2c4078b32a772da8869c82.
+2026-10-05T09:47:16.5085359+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/dcbf2fcc38f0_app-notas-manual-chavarro-23778/stdout_44c680bcff2c4078b32a772da8869c82 for reading in non-blocking mode.
+2026-10-05T09:47:16.5086359+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/dcbf2fcc38f0_app-notas-manual-chavarro-23778/stdout_44c680bcff2c4078b32a772da8869c82.
+2026-10-05T09:47:16.5087060+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/dcbf2fcc38f0_app-notas-manual-chavarro-23778/stdout_44c680bcff2c4078b32a772da8869c82.
+2026-10-05T09:47:16.5091247+00:00 ContainerStatus: Creating stderr named pipe at /podr/container/pipe/dcbf2fcc38f0_app-notas-manual-chavarro-23778/stderr_c3ee1c80e2c6410183d8af90a808e2a1.
+2026-10-05T09:47:16.5092467+00:00 ContainerStatus: Successfully created stderr named pipe at: /podr/container/pipe/dcbf2fcc38f0_app-notas-manual-chavarro-23778/stderr_c3ee1c80e2c6410183d8af90a808e2a1.
+2026-10-05T09:47:16.5093261+00:00 ContainerStatus: Opening named pipe /podr/container/pipe/dcbf2fcc38f0_app-notas-manual-chavarro-23778/stderr_c3ee1c80e2c6410183d8af90a808e2a1 for reading in non-blocking mode.
+2026-10-05T09:47:16.5094085+00:00 ContainerStatus: Successfully opened named pipe: /podr/container/pipe/dcbf2fcc38f0_app-notas-manual-chavarro-23778/stderr_c3ee1c80e2c6410183d8af90a808e2a1.
+2026-10-05T09:47:16.5094611+00:00 ContainerStatus: Successfully removed non-blocking flag from /podr/container/pipe/dcbf2fcc38f0_app-notas-manual-chavarro-23778/stderr_c3ee1c80e2c6410183d8af90a808e2a1.
+2026-10-05T09:47:16.5095748+00:00 ContainerStatus: Creating container with image: appsvc/node:22-lts_20260810.2.tuxprod from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/appsvc/node:22-lts_20260810.2.tuxprod
+2026-10-05T09:47:18.0714727+00:00 ContainerStatus: Starting container: dcbf2fcc38f0_app-notas-manual-chavarro-23778.
+2026-10-05T09:47:18.1892229+00:00 ContainerStatus: Starting watchers and probes.
+2026-10-05T09:47:18.1895378+00:00 ContainerStatus: Starting metrics collection.
+2026-10-05T09:47:18.1901102+00:00 ContainerStatus: Container is running.
+2026-10-05T09:47:18.1930113+00:00 ContainerStatus: State: Starting, Action: CreatingContainer, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:45:50, LastErrorDetails: Container exited with exit code 1 during startup after 6.2s. Please inspect your container logs for more details., Details: Container app-notas-manual-chavarro-23778 successfully created and is running., DetailsLevel: INFO
+2026-10-05T09:47:18.3314323+00:00 ContainerStatus: Container start method finished after 4394 ms.
+2026-10-05T09:47:18.3315676+00:00 ContainerStatus: State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:45:50, LastErrorDetails: Container exited with exit code 1 during startup after 6.2s. Please inspect your container logs for more details., Details: Container app-notas-manual-chavarro-23778 successfully created and is running., DetailsLevel: INFO
+2026-10-05T09:47:18.3315931+00:00 ContainerStatus: State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:45:50, LastErrorDetails: Container exited with exit code 1 during startup after 6.2s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-10-05T09:47:18.5330183+00:00 ContainerStream:    _____                               
+2026-10-05T09:47:18.5331781+00:00 ContainerStream:   /  _  \ __________ _________   ____  
+2026-10-05T09:47:18.5331858+00:00 ContainerStream:  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-10-05T09:47:18.5331891+00:00 ContainerStream: /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-10-05T09:47:18.5331921+00:00 ContainerStream: \____|__  /_____ \____/ |__|    \___  >
+2026-10-05T09:47:18.5331953+00:00 ContainerStream:         \/      \/                  \/ 
+2026-10-05T09:47:18.5332005+00:00 ContainerStream: A P P   S E R V I C E   O N   L I N U X
+2026-10-05T09:47:18.5332035+00:00 ContainerStream: 
+2026-10-05T09:47:18.5332071+00:00 ContainerStream: Documentation    : http://aka.ms/webapp-linux
+2026-10-05T09:47:18.5332104+00:00 ContainerStream: NodeJS quickstart: https://aka.ms/node-qs
+2026-10-05T09:47:18.5332135+00:00 ContainerStream: NodeJS Version   : v22.23.2
+2026-10-05T09:47:18.5332165+00:00 ContainerStream: Instance Name    : 10-30-0-184
+2026-10-05T09:47:18.5332199+00:00 ContainerStream: Instance Id      : 06af00b7405ce01e92112d9236f57c70d8ff738bceef74cd316ed243ba044a77
+2026-10-05T09:47:18.5332229+00:00 ContainerStream: 
+2026-10-05T09:47:18.5332270+00:00 ContainerStream: Note: Any data outside '/home' is not persisted
+2026-10-05T09:47:22.9176434+00:00 ContainerStream: Starting OpenBSD Secure Shell server: sshd.
+2026-10-05T09:47:22.9331439+00:00 ContainerStream: WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-10-05T09:47:23.0018578+00:00 ContainerStream: Updating certificates in /etc/ssl/certs...
+2026-10-05T09:47:28.0802760+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in SSLcom-TLS-Root-2022-ECC.pem
+2026-10-05T09:47:28.0803400+00:00 ContainerStream: rehash: warning: skipping duplicate certificate in SSLcom-TLS-Root-2022-RSA.pem
+2026-10-05T09:47:28.1779487+00:00 ContainerStream: rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-10-05T09:47:28.1900541+00:00 ContainerStream: 4 added, 0 removed; done.
+2026-10-05T09:47:28.1901131+00:00 ContainerStream: Running hooks in /etc/ca-certificates/update.d...
+2026-10-05T09:47:28.1969594+00:00 ContainerStream: done.
+2026-10-05T09:47:28.2051612+00:00 ContainerStream: CA certificates copied and updated successfully.
+2026-10-05T09:47:28.3148408+00:00 ContainerStream: Starting periodic command scheduler: cron.
+2026-10-05T09:47:28.3516598+00:00 ContainerStream: Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-10-05T09:47:28.3544225+00:00 ContainerStream: Could not find operation ID in manifest. Generating an operation id...
+2026-10-05T09:47:28.3544359+00:00 ContainerStream: Build Operation ID: e9fafd16-87d7-4505-b390-4dd9d7b5f9b4
+2026-10-05T09:47:28.5482499+00:00 ContainerStream: Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2026-10-05T09:47:28.5840456+00:00 ContainerStream: Writing output script to '/opt/startup/startup.sh'
+2026-10-05T09:47:28.6386064+00:00 ContainerStream: Running #!/bin/sh
+2026-10-05T09:47:28.6386564+00:00 ContainerStream: 
+2026-10-05T09:47:28.6386619+00:00 ContainerStream: # Enter the source directory to make sure the script runs where the user expects
+2026-10-05T09:47:28.6386673+00:00 ContainerStream: cd "/home/site/wwwroot"
+2026-10-05T09:47:28.6386700+00:00 ContainerStream: 
+2026-10-05T09:47:28.6386803+00:00 ContainerStream: export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2026-10-05T09:47:28.6386835+00:00 ContainerStream: if [ -z "$PORT" ]; then
+2026-10-05T09:47:28.6386865+00:00 ContainerStream: 		export PORT=8080
+2026-10-05T09:47:28.6386894+00:00 ContainerStream: fi
+2026-10-05T09:47:28.6386920+00:00 ContainerStream: 
+2026-10-05T09:47:28.6386948+00:00 ContainerStream: echo Found tar.zst based node_modules.
+2026-10-05T09:47:28.6386979+00:00 ContainerStream: extractionCommand="tar -I zstd -xf node_modules.tar.zst -C /node_modules"
+2026-10-05T09:47:28.6387009+00:00 ContainerStream: echo "Removing existing modules directory from root..."
+2026-10-05T09:47:28.6387054+00:00 ContainerStream: rm -fr /node_modules
+2026-10-05T09:47:28.6387086+00:00 ContainerStream: mkdir -p /node_modules
+2026-10-05T09:47:28.6390863+00:00 ContainerStream: echo Extracting modules...
+2026-10-05T09:47:28.6390942+00:00 ContainerStream: $extractionCommand
+2026-10-05T09:47:28.6390983+00:00 ContainerStream: export NODE_PATH="/node_modules":$NODE_PATH
+2026-10-05T09:47:28.6391016+00:00 ContainerStream: export PATH=/node_modules/.bin:$PATH
+2026-10-05T09:47:28.6391046+00:00 ContainerStream: if [ -d node_modules ]; then
+2026-10-05T09:47:28.6391107+00:00 ContainerStream:     mv -f node_modules _del_node_modules || true
+2026-10-05T09:47:28.6391136+00:00 ContainerStream: fi
+2026-10-05T09:47:28.6391165+00:00 ContainerStream: 
+2026-10-05T09:47:28.6391199+00:00 ContainerStream: if [ -d /node_modules ]; then
+2026-10-05T09:47:28.6391230+00:00 ContainerStream:     ln -sfn /node_modules ./node_modules 
+2026-10-05T09:47:28.6391257+00:00 ContainerStream: fi
+2026-10-05T09:47:28.6391283+00:00 ContainerStream: 
+2026-10-05T09:47:28.6391312+00:00 ContainerStream: echo "Done."
+2026-10-05T09:47:28.6391360+00:00 ContainerStream: PATH="$PATH:/home/site/wwwroot" node src/server.js
+2026-10-05T09:47:28.6477339+00:00 ContainerStream: Found tar.zst based node_modules.
+2026-10-05T09:47:28.6477513+00:00 ContainerStream: Removing existing modules directory from root...
+2026-10-05T09:47:28.6533049+00:00 ContainerStream: Extracting modules...
+2026-10-05T09:47:28.7600440+00:00 ContainerStream: Done.
+2026-10-05T09:47:29.7692218+00:00 ContainerStream: Portal de notas escuchando en el puerto 8080
+2026-10-05T09:47:30.3965944+00:00 ContainerStatus: Site startup probe succeeded after 12.0387907 seconds.
+2026-10-05T09:47:30.4614603+00:00 ContainerStatus: State: Starting, Action: WarmUpProbeSucceeded, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:45:50, LastErrorDetails: Container exited with exit code 1 during startup after 6.2s. Please inspect your container logs for more details., Details: Site startup probe succeeded after 12.0387907 seconds., DetailsLevel: INFO
+2026-10-05T09:47:30.6412295+00:00 ContainerStatus: Site is running with deployment version: f371b3c6-e811-4326-9420-17f369a01700
+2026-10-05T09:47:30.6414326+00:00 ContainerStatus: Site started.
+2026-10-05T09:47:30.6415075+00:00 ContainerStatus: State: Started, Action: None, LastError: ContainerStartupFailure, LastErrorTimestamp: 10/05/2026 09:45:50, LastErrorDetails: Container exited with exit code 1 during startup after 6.2s. Please inspect your container logs for more details., Details: Site started at 10/05/2026 09:47:30 (UTC), DetailsLevel: INFO
+2026-10-05T09:47:30.6437817+00:00 ContainerStatus: Site is running with patch version NODE-22.23.2

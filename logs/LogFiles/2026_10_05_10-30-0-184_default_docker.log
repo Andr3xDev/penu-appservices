@@ -1,0 +1,65 @@
+2026-10-05T09:47:18.5330183Z    _____                               
+2026-10-05T09:47:18.5331781Z   /  _  \ __________ _________   ____  
+2026-10-05T09:47:18.5331858Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-10-05T09:47:18.5331891Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-10-05T09:47:18.5331921Z \____|__  /_____ \____/ |__|    \___  >
+2026-10-05T09:47:18.5331953Z         \/      \/                  \/ 
+2026-10-05T09:47:18.5332005Z A P P   S E R V I C E   O N   L I N U X
+2026-10-05T09:47:18.5332035Z 
+2026-10-05T09:47:18.5332071Z Documentation    : http://aka.ms/webapp-linux
+2026-10-05T09:47:18.5332104Z NodeJS quickstart: https://aka.ms/node-qs
+2026-10-05T09:47:18.5332135Z NodeJS Version   : v22.23.2
+2026-10-05T09:47:18.5332165Z Instance Name    : 10-30-0-184
+2026-10-05T09:47:18.5332199Z Instance Id      : 06af00b7405ce01e92112d9236f57c70d8ff738bceef74cd316ed243ba044a77
+2026-10-05T09:47:18.5332229Z 
+2026-10-05T09:47:18.5332270Z Note: Any data outside '/home' is not persisted
+2026-10-05T09:47:22.9176434Z Starting OpenBSD Secure Shell server: sshd.
+2026-10-05T09:47:22.9331439Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-10-05T09:47:23.0018578Z Updating certificates in /etc/ssl/certs...
+2026-10-05T09:47:28.0802760Z rehash: warning: skipping duplicate certificate in SSLcom-TLS-Root-2022-ECC.pem
+2026-10-05T09:47:28.0803400Z rehash: warning: skipping duplicate certificate in SSLcom-TLS-Root-2022-RSA.pem
+2026-10-05T09:47:28.1779487Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-10-05T09:47:28.1900541Z 4 added, 0 removed; done.
+2026-10-05T09:47:28.1901131Z Running hooks in /etc/ca-certificates/update.d...
+2026-10-05T09:47:28.1969594Z done.
+2026-10-05T09:47:28.2051612Z CA certificates copied and updated successfully.
+2026-10-05T09:47:28.3148408Z Starting periodic command scheduler: cron.
+2026-10-05T09:47:28.3516598Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-10-05T09:47:28.3544225Z Could not find operation ID in manifest. Generating an operation id...
+2026-10-05T09:47:28.3544359Z Build Operation ID: e9fafd16-87d7-4505-b390-4dd9d7b5f9b4
+2026-10-05T09:47:28.5482499Z Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2026-10-05T09:47:28.5840456Z Writing output script to '/opt/startup/startup.sh'
+2026-10-05T09:47:28.6386064Z Running #!/bin/sh
+2026-10-05T09:47:28.6386564Z 
+2026-10-05T09:47:28.6386619Z # Enter the source directory to make sure the script runs where the user expects
+2026-10-05T09:47:28.6386673Z cd "/home/site/wwwroot"
+2026-10-05T09:47:28.6386700Z 
+2026-10-05T09:47:28.6386803Z export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2026-10-05T09:47:28.6386835Z if [ -z "$PORT" ]; then
+2026-10-05T09:47:28.6386865Z 		export PORT=8080
+2026-10-05T09:47:28.6386894Z fi
+2026-10-05T09:47:28.6386920Z 
+2026-10-05T09:47:28.6386948Z echo Found tar.zst based node_modules.
+2026-10-05T09:47:28.6386979Z extractionCommand="tar -I zstd -xf node_modules.tar.zst -C /node_modules"
+2026-10-05T09:47:28.6387009Z echo "Removing existing modules directory from root..."
+2026-10-05T09:47:28.6387054Z rm -fr /node_modules
+2026-10-05T09:47:28.6387086Z mkdir -p /node_modules
+2026-10-05T09:47:28.6390863Z echo Extracting modules...
+2026-10-05T09:47:28.6390942Z $extractionCommand
+2026-10-05T09:47:28.6390983Z export NODE_PATH="/node_modules":$NODE_PATH
+2026-10-05T09:47:28.6391016Z export PATH=/node_modules/.bin:$PATH
+2026-10-05T09:47:28.6391046Z if [ -d node_modules ]; then
+2026-10-05T09:47:28.6391107Z     mv -f node_modules _del_node_modules || true
+2026-10-05T09:47:28.6391136Z fi
+2026-10-05T09:47:28.6391165Z 
+2026-10-05T09:47:28.6391199Z if [ -d /node_modules ]; then
+2026-10-05T09:47:28.6391230Z     ln -sfn /node_modules ./node_modules 
+2026-10-05T09:47:28.6391257Z fi
+2026-10-05T09:47:28.6391283Z 
+2026-10-05T09:47:28.6391312Z echo "Done."
+2026-10-05T09:47:28.6391360Z PATH="$PATH:/home/site/wwwroot" node src/server.js
+2026-10-05T09:47:28.6477339Z Found tar.zst based node_modules.
+2026-10-05T09:47:28.6477513Z Removing existing modules directory from root...
+2026-10-05T09:47:28.6533049Z Extracting modules...
+2026-10-05T09:47:28.7600440Z Done.
+2026-10-05T09:47:29.7692218Z Portal de notas escuchando en el puerto 8080
